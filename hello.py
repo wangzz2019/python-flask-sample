@@ -16,4 +16,5 @@ def page2():
     return "<p>Hi, This is page 12</p>"
 
 if __name__=="__main__":
-    app.run(host=os.getenv('IP','0.0.0.0'),port=int(os.getenv('PORT'),5001))
+    app.run(host=os.getenv('IP','0.0.0.0'),port=int(os.getenv('PORT',5000)))
+
