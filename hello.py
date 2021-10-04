@@ -13,7 +13,7 @@ def page1():
 
 @app.route("/page2")
 def page2():
-    return "<p>Hi, This is page 12</p>"
+    return "<p>Hi, This is page 13</p>"
 
 if __name__ == "__main__":
     app.run(host=os.getenv('IP','0.0.0.0'),port=os.getenv('PORT',5000),debug=True)
