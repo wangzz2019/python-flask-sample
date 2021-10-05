@@ -11,7 +11,7 @@ pipeline {
 
         stage('test') {
           steps {
-            sh 'datadog-ci synthetics run-tests --config /root/dd.json'
+            sh 'npm run datadog-ci-synthetics'
           }
         }
 
