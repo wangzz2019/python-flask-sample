@@ -10,7 +10,7 @@ pipeline {
 
   }
   environment {
-    DATADOG_API_KEY = '226393fdc9e4468c8a8b379fabd53578'
-    DATADOG_APP_KEY = 'dfc86914a775a501273612ca67b7c21a456918e7'
+    DATADOG_API_KEY = '2xxx'
+    DATADOG_APP_KEY = 'xxx'
   }
 }
