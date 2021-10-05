@@ -11,7 +11,8 @@ pipeline {
 
         stage('test') {
           steps {
-            sh 'npm run datadog-ci-synthetics'
+            sh '''cd /root
+npm run datadog-ci-synthetics'''
           }
         }
 
