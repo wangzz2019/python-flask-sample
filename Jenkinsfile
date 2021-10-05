@@ -9,8 +9,4 @@ pipeline {
     }
 
   }
-  environment {
-    DATADOG_API_KEY = '2xxx'
-    DATADOG_APP_KEY = 'xxx'
-  }
 }
