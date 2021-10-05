@@ -2,9 +2,19 @@ pipeline {
   agent any
   stages {
     stage('stage1') {
-      steps {
-        echo 'Hello World'
-        sh 'datadog-ci synthetics run-tests --config /root/datadog-ci.json '
+      parallel {
+        stage('stage1') {
+          steps {
+            echo 'Hello World'
+          }
+        }
+
+        stage('test') {
+          steps {
+            sh 'datadog-ci synthetics run-tests --config ./datadog-ci.json'
+          }
+        }
+
       }
     }
 
