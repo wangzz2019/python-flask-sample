@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Hey guys, this is the top page of this test site</p><br/><a href='/page1'>page1</a><br/><a href='/page2'>page2</a>"
 
 @app.route("/page1")
 def page1():
